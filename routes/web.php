@@ -11,3 +11,6 @@ Route::get('/base', function () {
 Route::get('/buy', function () {
     return view('buy');
 });
+Route::get('/inicio', function () {
+    return view('inicio');
+});

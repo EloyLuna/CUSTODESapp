@@ -19,12 +19,12 @@
   <body>
     <nav class="navbar navbar-dark px-4 py-1">
       <div class="container" style="padding-top: 0.2rem; padding-bottom: 0.2rem;">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="{{ url('/inicio') }}">
           <img src="{{ asset('imagenes/Logo (1).png') }}" alt="CUSTODES" style="width: 150px; height: 150px; object-fit: contain; margin-top: -30px; margin-bottom: -30px;" class="d-inline-block align-top">
         </a>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">
+            <a class="nav-link active text-white" aria-current="page" href="{{ url('/buy') }}">
               <img src="{{ asset('imagenes/icons8-buy-48.png') }}" alt="" width="35" height="35" class="d-inline-block align-top">
             </a>
           </li>

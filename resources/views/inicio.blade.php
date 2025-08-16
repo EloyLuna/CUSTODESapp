@@ -18,12 +18,12 @@
   <body>
     <nav class="navbar navbar-dark px-4 py-1">
       <div class="container" style="padding-top: 0.2rem; padding-bottom: 0.2rem;">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center">
           <img src="{{ asset('imagenes/Logo (1).png') }}" alt="CUSTODES" style="width: 150px; height: 150px; object-fit: contain; margin-top: -30px; margin-bottom: -30px;" class="d-inline-block align-top">
         </a>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">
+            <a class="nav-link active text-white" aria-current="page" href="{{ url('/buy') }}">
               <img src="{{ asset('imagenes/icons8-buy-48.png') }}" alt="" width="35" height="35" class="d-inline-block align-top">
             </a>
           </li>
@@ -81,9 +81,11 @@
     <a href="{{ url('/buy') }}">
       <img class="img-hoover-effect" src="{{ asset('imagenes/Edición_1.png') }}" alt="Logo" style="width: 420px; height: 480px; object-fit: cover; border-radius: 48px; border: 28px solid #fff; box-shadow: 0 8px 32px rgba(0,0,0,0.18); display: block; transition: transform 0.3s, box-shadow 0.3s;">
     </a>
-    <div style="width: 420px; height: 480px; background: #fff; border-radius: 48px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); display: flex; align-items: center; justify-content: center; padding: 18px;">
-      <img class="img-hoover-effect" src="{{ asset('imagenes/IMG_6075.png') }}" alt="CETME-C" style="width: 100%; height: 100%; object-fit: contain; border-radius: 36px; border: 20px solid #fff; display: block; background: #fff; transition: transform 0.3s, box-shadow 0.3s;">
-    </div>
+    <a href="{{ url('/buy') }}" style="width: 420px; height: 480px; display: block; border-radius: 48px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);">
+      <div style="width: 100%; height: 100%; background: #fff; border-radius: 48px; display: flex; align-items: center; justify-content: center; padding: 18px;">
+        <img class="img-hoover-effect" src="{{ asset('imagenes/IMG_6075.png') }}" alt="CETME-C" style="width: 100%; height: 100%; object-fit: contain; border-radius: 36px; border: 20px solid #fff; display: block; background: #fff; transition: transform 0.3s, box-shadow 0.3s;">
+      </div>
+    </a>
     <style>
       .img-hoover-effect:hover {
         transform: scale(1.06) rotate(-2deg);
